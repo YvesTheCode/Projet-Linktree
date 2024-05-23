@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinktrYves</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="flexCC">
+    <header class="flexC roseF">
+        <nav>
+            <svg width="10" height="20">
+                <polygon points="11 0,0 10,11 20"
+                style="fill:none;stroke:rgb(255, 255, 255);stroke-width:2;" />
+            </svg>
+            <button class="inter" id="abo" onclick="aller()">S'abonner</button>
+        </nav>
+        <div class="pattern2"></div>
+        <div class="pattern"></div>
+    </header>
+    <main class="flexCC">
+        <section class="flexCC">
+            <img class="moi" src="img/magueule.svg" alt="Mon jolie minois en pictogramme">
+            <div class="titre">
+                <h1 class="lily">
+                    <span class="rose">Y</span> <span class="gold">v</span> <span class="bleu">e</span> <span class="vert">s</span>
+                    <br> <span class="rose">B</span> <span class="gold">o</span> <span class="bleu">s</span> <span class="vert">s</span></h1>
+                <img src="img/the.png" alt="the" class="the">
+            </div>
+            <h2 class="inter rose">Web design - Infographie <br>de qualité supérieur</h2>
+            <div class="boutons flexCC">
+                <a href=""> <button class="inter goldF">Site web</button> </a>
+                <div class="flexCC">
+                    <a href=""> <button class="inter bleuF">Portfolio</button></a>
+                    <a href=""> <button class="inter vertF">Contacts</button> </a>
+                </div> 
+            </div>
+            <div class="pictos flexCC">
+
+                <a href="https://www.youtube.com/@YvesTheBoss" target="blank_"><img src="img/pti bt1.png" alt=""></a>
+                <a href="https://www.instagram.com/yves_a.c/" target="blank_"><img src="img/pti bt2.png" alt=""></a>
+                <a href="https://twitter.com/Yves_Boss" target="blank_"><img src="img/pti bt3.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer class="flexC roseF">
+        <p class="inter">YvesTheCorp © 2018</p>
+        <div class="pattern2"></div>
+        <div class="pattern"></div>
+    </footer>
+
+<script>
+
+function aller(){
+
+if(abo.innerHTML==="S'abonner"){abo.style.backgroundColor="#FFAB00",
+abo.style.color="white",
+abo.innerHTML="Abonné",
+abo.style.width="80px"
+}
+
+else{
+abo.style.backgroundColor="white",
+abo.style.color="black",
+abo.innerHTML="S'abonner",
+abo.style.width="80px"
+}
+
+if(abo.innerHTML==="Abonné"){abo.onmouseover=function(){
+abo.style.backgroundColor="crimson",
+abo.style.color="white",
+abo.innerHTML="Se désabonner",
+abo.style.width="110px"
+abo.onmouseout=function(){abo.style.backgroundColor="white",
+abo.style.color="black",
+abo.innerHTML="S'abonner",
+abo.style.width="80px"}}}
+
+else{abo.onmouseover=function(){}
+abo.onmouseout=function(){}}
+
+}
+
+
+</script>
+
+</body>
+
+</html>

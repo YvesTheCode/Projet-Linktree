@@ -164,12 +164,16 @@ color: #000000;
 font-size: 13px;
 border: solid 1px black ;
 font-weight: 400;
-
+width: 80px;
+text-align: center;
 border-radius: 100px;}
 
 nav svg:hover{cursor: pointer;}
 
 button{cursor: pointer;}
+
+#abo:active{background-color: #FFAB00;
+color: white;}
 
 /*
 .box {
